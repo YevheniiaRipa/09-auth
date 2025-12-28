@@ -3,7 +3,7 @@ import {
   HydrationBoundary,
   QueryClient,
 } from '@tanstack/react-query';
-import { fetchNoteById } from '@/lib/api';
+import { fetchNoteById } from '@/lib/api/clientApi';
 import NoteDetailsClient from './NoteDetails.client';
 import type { Metadata } from 'next';
 
@@ -29,7 +29,7 @@ export async function generateMetadata({
     openGraph: {
       title: `Note: ${note.title}`,
       description: note.content.slice(0, 100),
-      url: `https://08-zustand-sepia-two.vercel.app/notes/${id}`,
+      url: `https://09-auth.vercel.app/notes/${id}`,
       images: [
         {
           url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',

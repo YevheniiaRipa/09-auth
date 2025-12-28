@@ -32,7 +32,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://08-zustand-sepia-two.vercel.app/notes/filter/${
+      url: `https://09-auth.vercel.app/notes/filter/${
         tag?.toLowerCase() || 'all'
       }`,
       images: [

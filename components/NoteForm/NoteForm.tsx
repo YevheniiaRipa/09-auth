@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-import { createNote, type NewNote } from '@/lib/api';
+import { createNote, type NewNote } from '@/lib/api/clientApi';
 import { useNoteDraftStore } from '@/lib/store/noteStore';
 import css from './NoteForm.module.css';
 
