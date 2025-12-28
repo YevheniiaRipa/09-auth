@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Profile page',
     description:
       'Page for viewing and editing your user profile, including account information and avatar.',
-    url: 'https://09-auth.vercel.app/profile',
+    url: 'https://09-auth-two-iota.vercel.app/profile',
     images: [
       {
         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
