@@ -78,6 +78,6 @@ export const getMe = async (): Promise<User> => {
 export type UpdateUserRequest = Partial<Pick<User, 'username'>>;
 
 export const updateMe = async (payload: UpdateUserRequest): Promise<User> => {
-  const { data } = await nextServer.put('/users/me', payload);
+  const { data } = await nextServer.patch('/users/me', payload);
   return data;
 };
