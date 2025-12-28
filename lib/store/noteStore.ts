@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { NewNote } from '@/lib/api';
+import type { NewNote } from '@/lib/api/clientApi';
 
 type NoteDraft = Omit<NewNote, 'tag'> & { tag: string };
 
